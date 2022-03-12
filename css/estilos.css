@@ -31,6 +31,11 @@ header h1 {
     color:black;
     text-shadow: 2px 2px 5px #FFF6BE;
     font-size: 3rem;
+    animation-name: animacionTitulo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
 }
 .header_a {
     width: 5%;
@@ -63,6 +68,14 @@ header h1 {
 }
 .menu ul li a:hover {
     background-color: #f7c288;
+}
+/*ANIMACION*/
+@keyframes animacionTitulo {
+    0% {color: black;}
+    25% {color: white;}
+    50% {color: black;}
+    75% {color: white;}
+    100% {color: black;}
 }
 /*MAIN*/
 main {
