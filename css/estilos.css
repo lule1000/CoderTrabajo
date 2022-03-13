@@ -289,16 +289,18 @@ footer legend {
     body {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7,auto);
-        grid-template-areas: "nav" "main" "main" "aside" "aside" "iframe" "footer";
+        grid-template-areas: "header" "nav" "main" "main" "aside" "aside" "iframe" "footer";
     }
     /*HEADER*/
     header {
-        grid-area: nav;
+        grid-area: header;
         width: 100%;
-        justify-content: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     header h1 {
-        font-size: 4rem;
+        font-size: 5.5rem;
     }
     .header_a {
         width: 10%;
@@ -309,7 +311,10 @@ footer legend {
         text-decoration: none;
     }
     .menu {
-        display: none;
+        display: flex;
+    }
+    .menu ul li a {
+        font-size: 1.365rem;
     }
     /*MAIN*/
     main {
