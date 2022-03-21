@@ -6,42 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estalingrado y Fuerzas Aliadas</title>
     <link rel="shortcut icon" href="../images/IconVectorial (1).webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
         <a class="header_a" href="../index.html">
-            <img class="header_a--img" src="../images/IconVectorial (1).webp" alt="icon">
+            <img class="header_a--img rounded-circle text-decoration-none" src="../images/IconVectorial (1).webp" alt="icon">
         </a>
-        <h1>Segunda Guerra Mundial</h1>
-        <nav class="menu">
-          <ul>
-            <li>
-                <a href="#sugerencias">Sugerencias</a>
-            </li>
-            <li>
-               <a href="../index.html">Inicio del Fuhrer</a>
-            </li>
-            <li>
-                <a href="segunda.html">Avance de Alemania</a>
-            </li>
-            <li>
-                <a href="tercera.html">Guerra en el Pacifico</a>
-            </li>
-            <li>
-                <a href="cuarta.html">Estalingrado y Fuerzas Aliadas</a>
-            </li>
-            <li>
-                <a href="quinta.html">Caída del III Reich</a>
-            </li>
-          </ul>
-        </nav>
+        <h1 class="text-black overflow-hidden">Segunda Guerra Mundial</h1>
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid">
+              <!--boton hamburguesa-->
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sugerencias">Sugerencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio del Fuhrer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="segunda.html">Avance de Alemania</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tercera.html">Guerra en el Pacifico</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cuarta.html">Fuerzas Aliadas y Estalingrado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quinta.html">Caida del III Reich</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
         <section>
             <article>
-               <h1>Estalingrado y Fuerzas Aliadas</h1> 
+               <h1 class="text-center text-black overflow-hidden">Estalingrado y Fuerzas Aliadas</h1> 
                <p>Stalingrado fue un gran punto de inflexión en la segunda guerra mundial. Librada entre junio de 1942 y febrero de 1943, se recuerda como una de las batallas más sangrientas de la historia, donde se enfrentaron los nazis contra el ejército rojo. Más de cuatro millones de bajas para ambos lados, tanto civiles como militares. El invierno ruso junto con la retirada de los soviéticos (dejando sin suministros y sin comida a los alemanes) significó la derrota de Alemania y el panorama de la guerra parecía cada vez más difícil para el Führer. 
                 A lo largo de 1944, el III Reich sufrió una derrota tras otra. Los ejércitos anglo-americanos lograrían liberar Roma en el frente italiano. En el frente oriental, los rusos liberaron Kiev y en octubre, los británicos junto con la ayuda de los griegos lograron liberar a los países balcanes de los alemanes. 
                 El 6 de junio, un poderoso ejército desembarcó en Normandía. La ruptura de las líneas alemanas cerca de Avranches condujo a las fuerzas aliadas a la liberación de París en agosto. El júbilo por este hecho histórico desató la euforia por parte de los antifascistas en todo el mundo, incluso en América Latina. Un nuevo desembarco en Tolón daría por liberada toda Francia Meridional. La caída del führer estaba cada vez más cerca
@@ -51,15 +60,52 @@
     </main>
 
         <aside>
-            <img id="imgCuarta1" src="../images/DesembarcoNormandia (1).jpg" alt="desembarco en Normandía">
-            <img id="imgCuarta2" src="../images/DesembarcoNormandia2 (3).jpg" alt="desembarco en Normandía">
-            <img id="imgCuarta3" src="../images/LiberacionParis (1).jpg" alt="liberacion de paris">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/DesembarcoNormandia (1) (1).jpg" class="d-block w-100" alt="Desembarco en Normandia">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/Estalingrado (1).jpg" class="d-block w-100" alt="Estalingrado">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/Estalingrado2 (1).jpg" class="d-block w-100" alt="Estalingrado">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <img id="imgCuarta1" src="../images/DesembarcoNormandia2 (3).jpg" alt="desembarco en Normandía">
+            <img id="imgCuarta2" src="../images/LiberacionParis (1).jpg" alt="liberacion de paris">
             <article class="asideArticle">
                 <h3>Suicidios Nazis:</h3>
                 <p>Ante el avance de las fuerzas aliadas, muchos jerarcas alemanes optaron por el camino del suicidio antes que ser juzgados. 
                 </p>
             </article>
-            <img id="imgCuarta4" src="../images/SuicidiosNazis (1).jpg" alt="suicidios nazis">
+            <img id="imgCuarta3" src="../images/SuicidiosNazis (1).jpg" alt="suicidios nazis">
         </aside>
 
        <footer>
@@ -84,5 +130,6 @@
             Escrito por: <a href="ulisescatarinolo@outlook.com">Ulises Catarinolo</a>
         </address>
        </footer>
-</body>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
