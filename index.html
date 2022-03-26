@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
+    <header class="d-flex flex-row flex-nowrap justify-content-between align-items-stretch w-100">
         <a class="header_a" href="index.html">
             <img class="header_a--img rounded-circle text-decoration-none" src="images/IconVectorial (1).webp" alt="icon">
         </a>
@@ -60,7 +60,7 @@
      </section>
     </main>
  
-    <aside>
+    <aside class="overflow-hidden">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -101,8 +101,8 @@
           </div>
           <img id="img1" src="images/AlemanesNazis (1).jpg" alt="Alemanes reunidos">
           <img id="img2" src="images/NaziPropaganda (1).jpg" alt="Propaganda Nazi">
-          <article class="asideArticle">
-            <h3>Blitzkrieg "ataque relampago":</h3>
+          <article class="asideArticle ">
+            <h3 class="overflow-hidden">Blitzkrieg "ataque relampago":</h3>
             <p>Es una metodología de guerra que era utilizada por los nazis. Consistía primero en un bombardeo inicial, seguido del uso de fuerzas móviles, atacando con velocidad y sorpresa evitando así la reacción del enemigo. Esta táctica militar, en su momento fue muy innovadora y poco se sabía de cómo responderla. La aviación militar alemana, la Luftwaffe, era muy prestigiosa por la alta mecánica que tenía aplicada, de esta manera los “blitz” eran imparables.
             </p>
         </article>
@@ -110,16 +110,16 @@
     </aside>
 
     <section>
-        <iframe src="https://www.youtube.com/embed/AYQ8hT8cVTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="w-100 h-100" src="https://www.youtube.com/embed/AYQ8hT8cVTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <footer>
         <h3 id="#sugerencias">Sugerencias</h3>
         <form action="">
-             <fieldset class="form">
+             <fieldset class="form d-flex flex-column align-items-start">
                  <legend>Dejanos tus opiniones/sugerencias para brindar mejor contenido</legend>
                  <label class="footerFieldset" for="sugerencias">Sugerencias:</label>
-                 <textarea name="sugerencias" id="sugerencias" placeholder="sugerencias/opiniones" cols="20" rows="5"></textarea>
+                 <textarea class="w-100" name="sugerencias" id="sugerencias" placeholder="sugerencias/opiniones" cols="20" rows="5"></textarea>
                  <div>
                   <label class="footerFieldset" for="email">Email:</label>
                   <input type="email" placeholder="email@hotmail.com" name="email" id="email">

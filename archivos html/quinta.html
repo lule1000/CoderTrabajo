@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
+    <header class="d-flex flex-row flex-nowrap justify-content-between align-items-stretch w-100">
         <a class="header_a" href="../index.html">
             <img class="header_a--img rounded-circle text-decoration-none" src="../images/IconVectorial (1).webp" alt="icon">
         </a>
@@ -56,7 +56,7 @@
                 </p>
             </article>
         </section>
-        <section class="postGuerra">
+        <section class="postGuerra d-flex flex-column">
             <article>
                 <p>De esta manera se presentaba la nueva situación geopolítica de Europa con la caída del III Reich. La Unión Soviética logró quedarse con Alemania del Este y por consecuencia hacer presencia en Europa Occidental. Este contexto dio lugar a lo que más tarde se conocería como La Guerra Fría, un combate ideológico y pragmático entre las nuevas potencias mundiales: La URSS y Estados Unidos.
                 </p>
@@ -65,7 +65,7 @@
         </section>
     </main>
 
-    <aside class="asideDiferente">
+    <aside class="overflow-hidden">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -106,8 +106,8 @@
         </div>
         <img id="imgQuinta1" src="../images/FinDeLaGuerra (1).jpg" alt="fin de la guerra">
         <img id="imgQuinta2" src="../images/BombaAtomica (1).jpg" alt="bomba atomica">
-     <article class="asideQuinta">
-        <h3>El Holocausto:</h3>
+     <article class="asideQuinta overflow-hidden">
+        <h3 class="overflow-hidden">El Holocausto:</h3>
         <p>El holocausto fue un genocidio ejercido por el ejercito nazi.  Su proposito era exterminar a los homosexuales, comunistas, emigrantes, soldados enemigos, gente de color, disidentes politicos y principalmente judios. Como ya mencionamos antes, Polonia fue la principal víctima, donde se calculan que más de 3.000.000 de personas, entre ellas gente con las características antes dichas, fueron asesinadas de maneras brutales. Primero eran llevadas a los llamados “campos de concentración” o “exterminio”, dependiendo de las actividades que allí dentro se realizaban. La red de estos campos fue aumentando a medida que el ejercito nazi crecia. Uno de estos centros mas conocidos es Auschwitz, donde en la entrada habia un cartel que decia “El trabajo los hara libres”, un irónico y cruel mensaje que delata la maldad que había en el régimen nazi. Todas las pertenencias de los prisioneros eran utilizadas por los alemanes, hasta incluso los restos para elaborar jabones. Sin duda, un capítulo de nuestra historia que NUNCA debe repetirse.
         </p>
      </article>
@@ -116,10 +116,10 @@
     <footer>
         <h3 id="#sugerencias">Sugerencias</h3>
         <form action="">
-             <fieldset class="form">
+             <fieldset class="form d-flex flex-column align-items-start">
                  <legend>Dejanos tus opiniones/sugerencias para brindar mejor contenido</legend>
                  <label class="footerFieldset" for="sugerencias">Sugerencias:</label>
-                 <textarea name="sugerencias" id="sugerencias" placeholder="sugerencias/opiniones" cols="20" rows="5"></textarea>
+                 <textarea class="w-100" name="sugerencias" id="sugerencias" placeholder="sugerencias/opiniones" cols="20" rows="5"></textarea>
                  <div>
                   <label class="footerFieldset" for="email">Email:</label>
                   <input type="email" placeholder="email@hotmail.com" name="email" id="email">
