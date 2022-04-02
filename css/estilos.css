@@ -18,7 +18,7 @@ body {
 /*HEADER*/
 header {
   grid-area: header; }
-  header h1 {
+  header h2 {
     text-shadow: 2px 2px 5px #FFF6BE;
     font-size: 1.4rem; }
   header .header_a {
@@ -36,7 +36,7 @@ header {
 @media only screen and (min-width: 360px) {
   header {
     grid-area: header; }
-    header h1 {
+    header h2 {
       font-size: 2rem; }
     header .header_a {
       width: 7%; } }
@@ -45,13 +45,13 @@ header {
   header {
     grid-column: 1/3;
     flex-flow: row nowrap; }
-    header h1 {
+    header h2 {
       font-size: 2.7rem; }
     header .header_a {
       width: 5%; } }
 
 @media only screen and (min-width: 900px) {
-  header h1 {
+  header h2 {
     font-size: 3.5rem; }
   header .header_a {
     width: 5%; } }
@@ -114,17 +114,17 @@ main {
 
 @media only screen and (min-width: 1400px) {
   main section article h1 {
-    font-size: 3rem; }
+    font-size: 2.7rem; }
   main section article p {
-    font-size: 2.3rem; } }
+    font-size: 2rem; } }
 
 /*ASIDE*/
 aside {
   grid-area: aside;
   grid-row: 4/6;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  background: none;
   border-style: none; }
   aside .asideArticle {
     width: 100%;
@@ -146,46 +146,60 @@ aside {
     margin-bottom: 2%; }
   aside #img1 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #img2 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #img3 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgSegunda1 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgSegunda2 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgSegunda3 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgTercera1 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgTercera2 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgTercera3 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgCuarta1 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgCuarta2 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgCuarta3 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgQuinta1 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
   aside #imgQuinta2 {
     margin-bottom: 2%;
-    width: 100%; }
+    width: 55%;
+    border-style: double; }
 
 @media only screen and (min-width: 360px) {
   aside {
@@ -202,12 +216,13 @@ aside {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     gap: 1%;
+    align-items: start;
     flex-flow: row wrap;
     background-color: #f7c288;
     width: 100%;
     padding: 1%;
     border-style: inset; }
-    aside .asideArticle {
+    aside .asideArticle2, aside .asideQuinta {
       grid-column: 1/3;
       font-family: 'Roboto', sans-serif;
       width: 100%;
@@ -215,20 +230,13 @@ aside {
       border-style: inset;
       margin-top: 5%;
       padding: 2%; }
-      aside .asideArticle h3 {
+      aside .asideArticle2 h3, aside .asideQuinta h3 {
         text-align: left;
         font-size: 1.5rem; }
-      aside .asideArticle p {
+      aside .asideArticle2 p, aside .asideQuinta p {
         text-indent: 2%;
         font-size: 1rem; }
     aside .asideQuinta {
-      grid-column: 1/3;
-      font-family: 'Roboto', sans-serif;
-      width: 100%;
-      background-color: #FFF6BE;
-      border-style: inset;
-      margin-top: 5%;
-      padding: 2%;
       font-size: 1rem; }
       aside .asideQuinta h3 {
         text-align: left;
@@ -240,17 +248,42 @@ aside {
       grid-column: 1/3;
       overflow: hidden; }
   /*INDEX*/
+  #img1 {
+    width: 100% !important; }
+  #img2 {
+    width: 100% !important; }
   #img3 {
-    grid-column: 1/3; }
+    width: 100% !important;
+    grid-column: 1/3;
+    margin-top: 5%; }
   /*SEGUNDA*/
+  #imgSegunda1 {
+    width: 100% !important; }
+  #imgSegunda2 {
+    width: 100% !important; }
   #imgSegunda3 {
+    width: 100% !important;
     grid-column: 1/3; }
   /*TERCERA*/
+  #imgTercera1 {
+    width: 100% !important; }
+  #imgTercera2 {
+    width: 100% !important; }
   #imgTercera3 {
+    width: 100% !important;
     grid-column: 1/3; }
   /*CUARTA*/
+  #imgCuarta1 {
+    width: 100% !important; }
+  #imgCuarta2 {
+    width: 100% !important; }
   #imgCuarta3 {
-    grid-column: 1/3; } }
+    width: 100% !important;
+    grid-column: 1/3; }
+  #imgQuinta1 {
+    width: 100% !important; }
+  #imgQuinta2 {
+    width: 100% !important; } }
 
 @media only screen and (min-width: 900px) {
   aside {
@@ -308,7 +341,7 @@ footer {
     footer .form input {
       font-size: 1rem; }
   footer address {
-    text-shadow: 2px 2px 5px #f7c288;
+    text-shadow: 2px 2px 5px #FFF6BE;
     font-size: 1.2rem; }
 
 @media only screen and (min-width: 360px) {
@@ -363,22 +396,6 @@ footer {
       font-size: 1.7rem; }
   footer address {
     font-size: 2rem; } }
-
-@media only screen and (min-width: 1400px) {
-  footer h3 {
-    font-size: 2.5rem; }
-  footer .form {
-    font-size: 2.2rem; }
-    footer .form legend {
-      font-size: 2.2rem; }
-    footer .form label.footerFieldset {
-      font-size: 2.2rem; }
-    footer .form textarea {
-      font-size: 2.2rem; }
-    footer .form input {
-      font-size: 2.2rem; }
-  footer address {
-    font-size: 2.5rem; } }
 
 @media only screen and (min-width: 600px) {
   body {

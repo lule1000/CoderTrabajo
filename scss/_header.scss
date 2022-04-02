@@ -1,6 +1,6 @@
 header {
     grid-area: header;
-    h1  {
+    h2  {
        text-shadow: $textShadow;
        font-size: 1.4rem;
     }
@@ -12,19 +12,19 @@ header {
         }
     }
     button.navbar-toggler {
-        background-color: rgb(37, 34, 34);
+        background-color: map-get($map: $paleta, $key:'negro');
     } 
     ul {
-        background-color: $ulColor;
+        background-color: map-get($map: $paleta, $key: 'negro');
         a.nav-link:hover {
-            background-color: #f7c288;
+            background-color: map-get($map: $paleta, $key: 'naranja');
         }
     }
 }
 @media only screen and (min-width: 360px) {
     header {
         grid-area: header;
-        h1 {
+        h2 {
             font-size: 2rem;
         }
         .header_a {
@@ -36,7 +36,7 @@ header {
     header {
         grid-column: 1/3;
         flex-flow: row nowrap;
-        h1 {
+        h2 {
             font-size: 2.7rem;
         }
         .header_a {
@@ -46,7 +46,7 @@ header {
 }
 @media only screen and (min-width: 900px) {
     header {
-        h1 {
+        h2 {
             font-size: 3.5rem;
         }
         .header_a {

@@ -11,7 +11,7 @@ main {
     }
     section article p {
         font-size: 1rem;
-        background-color: $mainColor;
+        background-color: map-get($map: $paleta, $key: 'naranja');
         border-style: inset;
         font-family: 'Roboto', sans-serif;
         padding: 6%;
@@ -66,10 +66,10 @@ main {
 @media only screen and (min-width: 1400px) {
     main {
         section article h1 {
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
         section article p {
-            font-size: 2.3rem;
+            font-size: 2rem;
         }    
     }
 }
