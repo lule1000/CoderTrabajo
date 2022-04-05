@@ -2,14 +2,10 @@ header {
     grid-area: header;
     h2  {
        text-shadow: $textShadow;
-       font-size: 1.4rem;
+       font-size: 1.6rem;
     }
     .header_a {
         width: 10%;
-        .header_a--img {
-            width: 100%;
-            height: auto;
-        }
     }
     button.navbar-toggler {
         background-color: map-get($map: $paleta, $key:'negro');
@@ -22,14 +18,8 @@ header {
     }
 }
 @media only screen and (min-width: 360px) {
-    header {
-        grid-area: header;
-        h2 {
-            font-size: 2rem;
-        }
-        .header_a {
-            width: 7%;
-        }    
+    header h2 {
+            font-size: 2rem;   
     }
 }
 @media only screen and (min-width: 600px) {
@@ -37,10 +27,7 @@ header {
         grid-column: 1/3;
         flex-flow: row nowrap;
         h2 {
-            font-size: 2.7rem;
-        }
-        .header_a {
-            width: 5%;
+            font-size: 3rem;
         }    
     }
 }
@@ -50,14 +37,12 @@ header {
             font-size: 3.5rem;
         }
         .header_a {
-            width: 5%;
+            width: 7%;
         }
     }
 }
 @media only screen and (min-width: 1400px) {
-    header {
-        a.nav-link {
-            font-size: 1.5rem;
-        }    
+    header a.nav-link { 
+            font-size: 1.5rem;    
     }
 }

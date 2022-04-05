@@ -4,12 +4,10 @@ aside {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-style: none;
     .asideArticle {
         width: 100%;
         background-color: map-get($map: $paleta, $key: 'naranja');
         padding: 2%;
-        border-style: inset;
         margin-bottom: 2%;
         p {
             font-size: 1rem;
@@ -21,10 +19,8 @@ aside {
         margin-bottom: 2%;
     }
     .asideQuinta {
-        width: 100%;
         background-color: map-get($map: $paleta, $key: 'naranja');
         padding: 2%;
-        border-style: inset;
         margin-bottom: 2%;
     }
     //INDEX
@@ -76,12 +72,8 @@ aside {
     }                    
 }
 @media only screen and (min-width: 360px) {
-    aside {
-        grid-area: aside;
-        grid-row: 4/6;
-        .asideArticle p {
-            font-size: 1.2rem;
-        }    
+    aside .asideArticle p {
+        font-size: 1.2rem;    
     }
 }
 @media only screen and (min-width: 600px) {
@@ -95,7 +87,6 @@ aside {
         align-items: start;
         flex-flow: row wrap;
         background-color: map-get($map: $paleta, $key: 'naranja');
-        width: 100%;
         padding: 1%;
         border-style: inset;
         .asideArticle2 {
@@ -103,7 +94,6 @@ aside {
             font-family: 'Roboto', sans-serif;
             width: 100%;
             background-color: map-get($map: $paleta, $key: 'amarilloCrema');
-            border-style: inset;
             margin-top: 5%;
             padding: 2%;
             h3 {
@@ -207,11 +197,8 @@ aside {
     }
 }
 @media only screen and (min-width: 1200px) {
-    aside {
-        grid-template-rows: repeat(3,auto);
-        .asideArticle {
+    aside .asideArticle {
             grid-column: 1/2;
-        }
     }
     /*INDEX*/
     #img3 {

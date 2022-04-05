@@ -1,9 +1,5 @@
 footer {
     grid-area: footer;
-    h3 {
-        font-size: 1.4rem;
-        text-shadow: $textShadow;
-    }
     .form {
         font-size: 1rem;
         legend {
@@ -27,9 +23,6 @@ footer {
 @media only screen and (min-width: 360px) {
     footer {
         grid-area: footer;
-        h3 {
-            font-size: 1.6rem;
-        }
         .form {
             font-size: 1.2rem;
             legend {
@@ -53,10 +46,6 @@ footer {
 @media only screen and (min-width: 600px) {
     footer {
         grid-column: 1/3;
-        h3 {
-            font-size: 1.5rem;
-            overflow: hidden;
-        }
         .form {
             font-size: 1rem;
             legend {
@@ -79,9 +68,6 @@ footer {
 }
 @media only screen and (min-width: 900px) {
     footer {
-        h3 {
-            font-size: 2rem;
-        }
         .form {
             font-size: 1.7rem;
             legend {
