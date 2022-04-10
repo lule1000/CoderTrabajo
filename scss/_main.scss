@@ -4,13 +4,14 @@ main {
     margin-top: 2%;
     margin-bottom: 2%;
     section article h1 {
+        font-family: 'Cinzel Decorative', cursive;
         font-size: 1.2rem;
         text-shadow: $textShadow;
     }
     section article p {
         font-size: 1rem;
-        background-color: map-get($map: $paleta, $key: 'naranja');        
-        font-family: 'Roboto', sans-serif;
+        background-color: map-get($map: $paleta, $key: 'naranja');
+        font-family: 'Merriweather', serif;        
         padding: 6%;
         text-indent: 2%;
     }

@@ -1,14 +1,15 @@
 header {
     grid-area: header;
     h2  {
+       font-family: 'Cinzel Decorative', cursive;
        text-shadow: $textShadow;
-       font-size: 1.6rem;
+       font-size: 1.3rem;
     }
     .header_a {
         width: 10%;
     }
     button.navbar-toggler {
-        background-color: map-get($map: $paleta, $key:'negro');
+        background-color: map-get($map: $paleta, $key:'negro');  
     } 
     ul {
         background-color: map-get($map: $paleta, $key: 'negro');
@@ -19,7 +20,7 @@ header {
 }
 @media only screen and (min-width: 360px) {
     header h2 {
-            font-size: 2rem;   
+            font-size: 1.85rem;   
     }
 }
 @media only screen and (min-width: 600px) {

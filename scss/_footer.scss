@@ -1,12 +1,15 @@
 footer {
     grid-area: footer;
+    background-color: map-get($map: $paleta, $key: 'naranja');
     .form {
         font-size: 1rem;
         legend {
+            font-family: 'Cinzel Decorative', cursive;
             text-shadow: $textShadow;
         }
         label.footerFieldset {
             text-shadow: $textShadow;
+            font-family: 'Cormorant Infant', serif;
         }
         textarea {
             font-size: 1rem;
@@ -16,6 +19,7 @@ footer {
         }                        
     }
     address {
+        color: map-get($map: $paleta, $key: 'negro');
         text-shadow: $textShadow;
         font-size: 1.2rem;
     }            
@@ -49,7 +53,7 @@ footer {
         .form {
             font-size: 1rem;
             legend {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
             label.footerFieldset {
                 font-size: 1.5rem;
@@ -71,10 +75,10 @@ footer {
         .form {
             font-size: 1.7rem;
             legend {
-                font-size: 1.7rem;
+                font-size: 2.5rem;
             }
             label.footerFieldset {
-                font-size: 1.7rem;
+                font-size: 2.2rem;
             }
             textarea {
                 font-size: 1.7rem;
