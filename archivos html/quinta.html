@@ -17,9 +17,9 @@
 <body>
    <header>
     <!--BARRA DE NAVEGACION-->
-      <nav class="navbar navbar-expand-xl navbar-dark d-flex justify-content-between">
+      <nav id="menu" class="navbar navbar-expand-xl navbar-dark d-flex justify-content-between">
         <div class="container-fluid">
-          <a class="header_a" href="index.html">
+          <a class="header_a" href="../index.html">
             <img class="text-decoration-none sticky-top" src="../images/historia.svg" alt="icon">
         </a>
         <h2 class="text-black overflow-visible text-center">Segunda Guerra Mundial</h2>
@@ -62,14 +62,15 @@
                 </p>
             </article>
         </section>
-        <section class="postGuerra border border-4">
-            <article>
-                <p class="text-white">De esta manera se presentaba la nueva situación geopolítica de Europa con la caída del III Reich. La Unión Soviética logró quedarse con Alemania del Este y por consecuencia hacer presencia en Europa Occidental. Este contexto dio lugar a lo que más tarde se conocería como La Guerra Fría, un combate ideológico y pragmático entre las nuevas potencias mundiales: La URSS y Estados Unidos.
-                </p>
-            </article>
-            <img id="imgQuinta5" src="../images/MapaPostGuerra.jpg" alt="Mapa de la segunda guerra mundial post guerra">
-        </section>
     </main>
+
+    <section class="postGuerra border-bottom border-top border-4 d-grid col-12 d-flex flex-column align-items-center align-content-md-center fs-3 mb-2">
+      <article>
+          <p class="text-white w">De esta manera se presentaba la nueva situación geopolítica de Europa con la caída del III Reich. La Unión Soviética logró quedarse con Alemania del Este y por consecuencia hacer presencia en Europa Occidental. Este contexto dio lugar a lo que más tarde se conocería como La Guerra Fría, un combate ideológico y pragmático entre las nuevas potencias mundiales: La URSS y Estados Unidos.
+          </p>
+      </article>
+      <img id="imgQuinta5" src="../images/MapaPostGuerra.jpg" alt="Mapa de la segunda guerra mundial post guerra">
+  </section>
 
     <aside class="overflow-hidden">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -112,7 +113,7 @@
         </div>
         <img id="imgQuinta1" src="../images/FinDeLaGuerra (1).jpg" alt="fin de la guerra">
         <img id="imgQuinta2" src="../images/banderaYankee.jpg" alt="levantando la bandera">
-     <article class="asideQuinta w-100 overflow-hidden border border-4">
+     <article class="asideQuinta w-100 overflow-hidden border border-4 mb-3">
         <h3 class="overflow-visible">El Holocausto:</h3>
         <p>El holocausto fue un genocidio ejercido por el ejercito nazi.  Su proposito era exterminar a los homosexuales, comunistas, emigrantes, soldados enemigos, gente de color, disidentes politicos y principalmente judios. Como ya mencionamos antes, Polonia fue la principal víctima, donde se calculan que más de 3.000.000 de personas, entre ellas gente con las características antes dichas, fueron asesinadas de maneras brutales. Primero eran llevadas a los llamados “campos de concentración” o “exterminio”, dependiendo de las actividades que allí dentro se realizaban. La red de estos campos fue aumentando a medida que el ejercito nazi crecia. Uno de estos centros mas conocidos es Auschwitz, donde en la entrada habia un cartel que decia “El trabajo los hara libres”, un irónico y cruel mensaje que delata la maldad que había en el régimen nazi. Todas las pertenencias de los prisioneros eran utilizadas por los alemanes, hasta incluso los restos para elaborar jabones. Sin duda, un capítulo de nuestra historia que NUNCA debe repetirse.
         </p>
@@ -120,7 +121,9 @@
     </aside>
 
     <footer>
-      <img class="mt-2" src="../images/_linea.svg" alt="linea decorativa">
+      <li class="d-flex align-items-center">
+        <a class="nav-link text-white bg-black" href="#menu">volver al menú</a>
+      </li>     
       <form action="">
            <fieldset class="form d-flex flex-column align-items-center">
                <legend class="text-center" id="#sugerencias">Dejanos tus opiniones/sugerencias para brindar mejor contenido</legend>

@@ -1,6 +1,9 @@
 footer {
     grid-area: footer;
     background-color: map-get($map: $paleta, $key: 'naranja');
+    li a {
+        font-size: 0.8rem;
+    }
     .form {
         font-size: 1rem;
         legend {
@@ -27,6 +30,9 @@ footer {
 @media only screen and (min-width: 360px) {
     footer {
         grid-area: footer;
+        a li {
+            font-size: 1rem;
+        }
         .form {
             font-size: 1.2rem;
             legend {
@@ -72,6 +78,9 @@ footer {
 }
 @media only screen and (min-width: 900px) {
     footer {
+        li a {
+            font-size: 1.5rem;
+        }
         .form {
             font-size: 1.7rem;
             legend {

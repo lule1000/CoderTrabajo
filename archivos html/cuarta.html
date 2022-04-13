@@ -18,9 +18,9 @@
 <body>
   <header>
     <!--BARRA DE NAVEGACION-->
-      <nav class="navbar navbar-expand-xl navbar-dark d-flex justify-content-between">
+      <nav id="menu" class="navbar navbar-expand-xl navbar-dark d-flex justify-content-between">
         <div class="container-fluid">
-          <a class="header_a" href="index.html">
+          <a class="header_a" href="../index.html">
             <img class="text-decoration-none sticky-top" src="../images/historia.svg" alt="icon">
         </a>
         <h2 class="text-black overflow-visible text-center">Segunda Guerra Mundial</h2>
@@ -198,7 +198,7 @@
             </div>
             <img id="imgCuarta1" src="../images/DesembarcoNormandia2 (2).jpg" alt="desembarco en Normandía">
             <img id="imgCuarta2" src="../images/LiberacionParis (1).jpg" alt="liberacion de paris">
-            <article class="asideArticle asideArticle2 border border-4">
+            <article class="asideArticle asideArticle2 border border-4 mb-3">
                 <h3 class="overflow-visible">Suicidios Nazis:</h3>
                 <p>Ante el avance de las fuerzas aliadas, muchos jerarcas alemanes optaron por el camino del suicidio antes que ser juzgados. 
                 </p>
@@ -207,7 +207,9 @@
         </aside>
 
         <footer>
-          <img class="mt-2" src="../images/_linea.svg" alt="linea decorativa">
+          <li class="d-flex align-items-center">
+            <a class="nav-link text-white bg-black" href="#menu">volver al menú</a>
+          </li>     
           <form action="">
                <fieldset class="form d-flex flex-column align-items-center">
                    <legend class="text-center" id="#sugerencias">Dejanos tus opiniones/sugerencias para brindar mejor contenido</legend>
